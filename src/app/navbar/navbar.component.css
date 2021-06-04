@@ -1,0 +1,82 @@
+nav{
+    background-color: #2C3E50;
+
+    transition: padding .5s;
+
+}
+
+nav .logo{
+    font-size: 1.75em;
+    color: #fff !important;
+
+}
+
+nav .menu{
+  background-color:#1ABC9C ;
+  color:#fff;
+}
+
+
+nav .navbar-nav .nav-item .nav-link{
+   color: #fff !important;
+   padding:0 1rem;
+   font-size:1rem ;
+   transition: color .5s;
+
+}
+
+/* nav .navbar-nav .nav-item .nav-link:hover{
+    color:#1ABC9C !important;
+
+} */
+
+.link-bg{
+    background-color: #1ABC9C;
+    padding:20px 20px !important;
+    border-radius: 10px;
+
+}
+
+
+.classToAdd{
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+/* media query for nav bar component */
+    /* extra small screens */
+    @media screen and (max-width: 576px) {
+        nav .navbar-nav .nav-item {
+         
+            margin-top:10px;
+        }
+
+        nav .logo{
+            font-size: 1.5em;
+            
+
+        }
+    }
+
+     /* small screens */
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+         nav .navbar-nav .nav-item {
+         
+            margin-top:10px;
+        }
+    }
+
+     /* meduium screens */
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      nav .navbar-nav .nav-item {
+         
+            margin-top:10px;
+        }
+    }
+
+
+    

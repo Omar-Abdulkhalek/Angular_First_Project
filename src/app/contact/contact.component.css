@@ -1,0 +1,118 @@
+.contact {
+  background-color: #fff;
+  padding: 70px 0;
+  margin-top:100px;
+}
+.contact .parent {
+  width: 70%;
+}
+
+.contact .hero h2 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(44, 62, 80);
+}
+
+.icon-cont {
+  position: relative;
+}
+
+.icon-cont i {
+  color: rgb(44, 62, 80);
+}
+
+.icon-cont::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 4px;
+  left: 60px;
+  top: 40%;
+  background-color: rgb(44, 62, 80);
+}
+
+.icon-cont::before {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 4px;
+  right: 60px;
+  top: 40%;
+  background-color: rgb(44, 62, 80);
+}
+
+.contact .parent .inpt {
+  border-radius: 0 !important;
+  border-width: 0px 0px 0.1px 0px !important;
+  border-color: 0 0 rgba(176, 182, 189, 0.99);
+  padding: 60px 0;
+}
+
+.contact .parent .inpt:focus {
+  box-shadow: none !important;
+}
+
+.contact .parent .inpt::placeholder {
+  font-weight: 300 !important;
+  font-size: 1.3rem;
+  color: rgba(44, 62, 80, 0.7);
+
+}
+
+.contact .parent textarea {
+  resize: none;
+  padding-top: 40px !important;
+}
+
+.btn-bg {
+  background-color: rgb(26, 188, 156);
+  color: #fff;
+}
+
+.inpt-cont {
+  position: relative;
+}
+
+.inpt-cont label {
+  position: absolute;
+  top: 5px;
+  font-size: 0.8em;
+  line-height: 1.764705882em;
+  color: #1ABC9C;
+  display: none;
+
+}
+
+.inpt-cont ul {
+  position: absolute;
+  left: 10px;
+  bottom: -5px;
+  color: red;
+  font-size: 13px;
+  display: none;
+}
+
+
+/* media query for contact me component */
+    /* extra small screens */
+    @media screen and (max-width: 576px) {
+      .contact .hero h2 {
+        font-size: 1.9rem;
+        
+      }
+
+            .icon-cont::after {
+       
+        width:80px;
+       
+      }
+
+            .icon-cont::before {
+              
+              width: 80px;
+              
+      }
+    }
+
+    

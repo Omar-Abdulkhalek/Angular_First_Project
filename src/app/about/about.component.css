@@ -1,0 +1,86 @@
+.about{
+    background-color: #1ABC9C;
+    padding:70px 0;
+    margin-top:100px;
+
+}
+
+.about .hero{
+    width: 70%;
+    
+}
+
+.about .hero h2{
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #fff ;
+}
+
+.icon-cont{
+   
+    position: relative;
+    
+}
+
+
+ .icon-cont::after{
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 4px;
+    left: 60px;
+    top: 40%;
+    background-color: #fff;
+
+} 
+
+.icon-cont::before{
+    content: "";
+    position: absolute;
+    width: 105px;
+    height: 4px;
+    right: 60px;
+    top: 40%;
+    background-color: #fff;
+
+}
+
+.about .hero p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff ;
+    line-height:2;
+}
+
+
+/* media query for about component */
+    /* extra small screens */
+    @media screen and (max-width: 576px) {
+        .about .hero h2{
+            font-size: 2rem;
+            
+        }
+
+        .icon-cont::after{
+    
+             width: 80px;
+    
+
+        } 
+
+        .icon-cont::before{
+    
+             width: 80px;
+   
+
+        }
+
+
+        .about .hero p {
+            font-size: .80rem;
+            
+        }
+    }
+
+    

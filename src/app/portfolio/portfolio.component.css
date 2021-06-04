@@ -1,0 +1,168 @@
+
+.portfolio {
+  background-color: #fff;
+  padding: 70px 0;
+  margin-top:100px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: rgb(44, 62, 80);
+}
+
+.icon-cont {
+  position: relative;
+}
+
+.icon-cont i {
+  color: rgb(44, 62, 80);
+}
+
+.icon-cont::after {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 4px;
+  left: 60px;
+  top: 40%;
+  background-color: rgb(44, 62, 80);
+}
+
+.icon-cont::before {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 4px;
+  right: 60px;
+  top: 40%;
+  background-color: rgb(44, 62, 80);
+}
+
+
+.portfolio .img-cont{
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.portfolio .img-cont img {
+  border-radius: 10px;
+  width: 100%;
+  
+}
+
+.portfolio .img-cont .over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28,184,158,.85);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .img-cont:hover .over{
+    opacity: 1;
+}
+
+.portfolio .img-cont .over i {
+    color: #fff;
+    font-size: 60px;
+
+}
+
+
+
+.show-details{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0 ;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99999;
+    overflow: auto;
+    display: none;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.show-details .data-show{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.show-details .data-show .closed-icon{
+    color:#1ABC9C;
+    position: absolute;
+    font-size: 60px;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.show-details .data-show .imge-text-cont{
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.show-details .data-show .imge-text-cont img{
+    border-radius: 10px;
+    width: 70%;
+}
+
+.show-details .data-show .imge-text-cont p{
+    font-size: .85rem;
+    line-height: 1.5;
+    color: #212529;
+    width: 70%;
+    margin: auto;
+}
+
+.show-details .data-show .imge-text-cont button{
+    background-color: #1ABC9C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/* media query for portoflio component */
+    /* extra small screens */
+    @media screen and (max-width: 576px) {
+      .hero h2 {
+        font-size: 2rem;
+        
+      }
+
+      
+      .icon-cont::after {
+       
+        width: 80px;
+       
+      }
+
+      .icon-cont::before {
+       
+        width: 80px;
+       
+      }
+    }
+
+     
